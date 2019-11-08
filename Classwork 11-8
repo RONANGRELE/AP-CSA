@@ -1,0 +1,47 @@
+/*
+*     example object with constructor, mutator, and accessor methods
+*/
+
+public class object{
+ private int adjectiveInt;
+ private boolean adjectiveBoo;
+ private String adjectiveStr;
+    public object() {
+        adjectiveInt = 5;
+        adjectiveBoo = true;
+        adjectiveStr = "a";
+ }
+    public object(int i, boolean b, String s) {
+        adjectiveInt = i;
+        adjectiveBoo = b;
+        adjectiveStr = s;
+ }
+    public void setInt(int i) {
+        adjectiveInt = i;
+ }
+    public void setBoo(boolean b) {
+        adjectiveBoo = b;
+ }
+    public void setStr(String s) {
+        adjectiveStr = s;
+ }
+ public int getI() {
+        return adjectiveInt;
+ } 
+ public boolean getB() {
+        return adjectiveBoo;
+ } 
+ public String getS() {
+        return adjectiveStr;
+ }
+ public String toString() {
+        return "your int is " + adjectiveInt + ", your boolean is " + adjectiveBoo + ", and your char is " + adjectiveStr;
+ }
+ public boolean is51a() {
+     if (adjectiveInt == 5 && adjectiveBoo == true && adjectiveStr == "a") {
+            return true;
+        } else {
+            return false;
+        }
+ }
+}
